@@ -1,0 +1,40 @@
+html {
+  background: url(http://i.imgur.com/jQGFAQi.jpg) no-repeat center center fixed;
+  background-size:cover;
+  text-align: center;
+ }
+
+body {
+  margin: 0;
+}
+
+.clock {
+  width: 0;
+  height: 0;
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 300px solid transparent;
+  margin:180px auto;
+}
+
+.clock-face {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hand {
+  width:80px;
+  height:6px;
+  background: linear-gradient(to right, rgba(239, 0, 0, 0.7), rgba(249, 254, 0, 0.6), rgba(9, 239, 52, 0.5), rgba(0, 245, 255, 0.4));
+  position: absolute;
+  display: inline-block;
+  border-radius: 1px;
+  right: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
